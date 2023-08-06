@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4CAF50, #007BFF);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    margin-left: 8px; /* Add some space between the text box and the button */
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .delete-btn {
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .complete-btn {
+    background-color: #33cc33;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  li.completed span {
+    color: #888;
+  }
+  
+  .filter-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .filter-buttons button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .filter-buttons button.active {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+
+  .container {
+    max-width: 500px; /* Adjust the max-width as needed */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  span {
+    flex: 1; /* To make the task text take up remaining space */
+    margin-right: 16px; /* Increase the spacing between task text and delete button */
+  }
+
+  .hidden {
+    display: none;
+    color: red;
+    text-align: center;
+    margin-top: 5px;
+  }

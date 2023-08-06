@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Enter task">
+      <button onclick="addTask()">Add</button>
+    </div>
+    <p id="warning" class="hidden">Please enter a task!</p>
+    <div class="filter-buttons">
+      <button onclick="filterTasks('all')" data-filter="all">All</button>
+      <button onclick="filterTasks('completed')" data-filter="completed">Completed</button>
+      <button onclick="filterTasks('uncompleted')" data-filter="uncompleted">Uncompleted</button>
+    </div>
+    <ul id="taskList"></ul>
+    <button class="delete-all-btn" onclick="deleteAllTasks()">Delete All</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
